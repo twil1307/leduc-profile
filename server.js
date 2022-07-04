@@ -11,6 +11,6 @@ app.get('/', (req, res) => {
     res.sendFile(routeFile);
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log('app listening on port http://localhost:' + port)
 })
